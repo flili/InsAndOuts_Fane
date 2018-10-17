@@ -2,11 +2,26 @@
   THIS IS A MIDTERM FOR THE CLASS MTEC2280 - FALL2018
   MADLIB GAME - 2DN DRAFT
 */
+
+//sound import
+import processing.sound.*;
+
+SoundFile file;
+
+String inst = "instrumental.mp3";
+String path;
+//sound
+
+//states
 String state= "intro";
+//font
 PFont product;
 PFont title;
 
 void setup() {
+  path = sketchPath(inst);
+  file = new SoundFile (this, path);
+  file.play();
   size (1000, 1000);
   textAlign(CENTER);
   textSize(36);
