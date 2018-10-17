@@ -8,7 +8,7 @@ import processing.sound.*;
 
 SoundFile file;
 
-String inst = "data/instrumental.mp3";
+String inst = "instrumental.mp3";
 String path;
 //sound
 
@@ -21,7 +21,7 @@ PFont title;
 void setup() {
   path = sketchPath(inst);
   file = new SoundFile (this, path);
-  file.loop();
+  file.play();
   size (1000, 1000);
   textAlign(CENTER);
   textSize(36);
