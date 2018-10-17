@@ -1,6 +1,7 @@
-//creating a simple heshe with 3 heshe states: intro, heshe, heshe over
-//click the mouse to advance the states
-
+/*FANE LI LI
+  THIS IS A MIDTERM FOR THE CLASS MTEC2280 - FALL2018
+  MADLIB GAME - 2DN DRAFT
+*/
 String state= "intro";
 PFont product;
 PFont title;
