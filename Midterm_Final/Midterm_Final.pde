@@ -1,6 +1,6 @@
-/*FANE LI LI
+/*FANE LI
   THIS IS A MIDTERM FOR THE CLASS MTEC2280 - FALL2018
-  MADLIB GAME - 2DN DRAFT
+  MADLIB GAME - MIDTERM FINALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL 
 */
 
 //sound import
@@ -8,7 +8,7 @@ import processing.sound.*;
 
 SoundFile file;
 
-String inst = "instrumental.mp3";
+String inst = "data/instrumental.mp3";
 String path;
 //sound
 
@@ -61,7 +61,11 @@ void mousePressed() {
     state="choice1";
   } 
   else if (state=="choice1") {
+    if (mousePressed && mouseX > width/2 ){
     state= "blue";
+  }
+  else if (mousePressed && mouseX < width/2){
+    state = "pink";
   }
   else if (state=="pink") {
     state= "pink";
