@@ -20,9 +20,11 @@ String [] quote1 = {"You can do it!", "The lack of money is the root of all evil
 int quotedoor1 = int(random(quote1.length));
 
 
-String [] num = {"Your lucky number is 0", "Your lucky number is 1", "Your lucky number is 2", "Your lucky number is 3", "Your lucky number is 4", 
-                  "Your lucky number is 5", "Your lucky number is 6", "Your lucky number is 7", "Your lucky number is 8", "Your lucky number is 9"};
+String [] num = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
 int lucky = int(random(num.length));
+
+String [] num2 = {"0", "9", "8", "7", "6", "5", "4", "3", "2", "1"};
+int lucky2 = int(random(num.length));
 
 //-------------------------------------------------------------------------------------------------------------------------------//
 //SOUND FILE
@@ -119,6 +121,8 @@ void draw() {
   println(state);
   println("mouseX", mouseX);
   println("mouseY", mouseY);
+  println(lucky);
+  println(lucky2);
 }
 
 
@@ -293,9 +297,9 @@ void window1(){
   //blue
     fill(0);
     background(255);
-    text("Your quote of the day is:", width/2, height/2-100);
+    text("Your lucky number of the day is:", width/2, height/2-100);
     textFont(product);
-    text(num[lucky],width/2,height/2-50);   
+    text(num[lucky]+num2[lucky2],width/2,height/2-50);   
 }
 
 
@@ -304,9 +308,9 @@ void window1(){
 void window2(){
   //pink
     background(0);    
-    text("Your quote of the day is:", width/2, height/2-100);
+    text("Your lucky number of the day is:", width/2, height/2-100);
     textFont(product);
-    text(num[lucky],width/2,height/2-50); 
+    text(num[lucky]+num2[lucky2],width/2,height/2-50); 
 }
 
 
