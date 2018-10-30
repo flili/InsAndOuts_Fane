@@ -99,16 +99,11 @@ void setup() {
 void draw() {
   if (state=="intro") {
     intro();
-    
-    
-    //  rect(690,430,540,100);
-
-    //if (mousePressed && mousex)
   }
   else if (state=="choice1") {
     choice1();
-    door1();
-    door2();
+    doorBlue();
+    doorPink();
     textFont(product);
     text("Please select one:", width/2, height/4);
     text("blue", width/4, height/2-100);
@@ -302,7 +297,7 @@ void reset(){
 
 
 
-void door1(){
+void doorBlue(){
   //door BLUE
   noStroke();
   fill(240,238,237);
@@ -325,7 +320,7 @@ void door1(){
   fill(255);
   rect(150,520,110,100);
 }
-void door2(){
+void doorPink(){
   //door
   noStroke();
   fill(240,238,237);
